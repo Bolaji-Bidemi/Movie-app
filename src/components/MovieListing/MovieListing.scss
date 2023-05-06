@@ -1,0 +1,105 @@
+@import '../../common/colors.scss';
+
+.movie-list{
+    margin: 0px, 20px;
+    h2{
+        color: $font-secondary;
+        font-weight: 600;
+        margin-bottom: 10px;
+        padding: 15px;
+    }
+
+}
+.movie-container{
+    width: 100%;
+    display: grid;
+   grid-template-columns: repeat(5, 1fr);
+  padding: 10px;
+    gap: 4px
+}
+.pagination{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    padding: 20px;
+
+    .btn{
+        background-color: $secondary-color;
+        color: $font-primary;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 17px;
+        margin-right: 10px;
+    }
+}
+.subHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 0px 30px;
+  
+   
+}
+ .input{
+    background-color: transparent;
+        padding: 10px;
+        width: 150px;
+        outline: none;
+        border: 1px solid grey;
+        height: 30px;
+        color: $font-primary;
+        margin-left: 5px;
+
+
+    }
+    .text{
+        color: $font-primary;
+        margin-right: 15px;
+    }
+
+
+
+@media screen and (max-width: 724px){
+    .movie-container{
+        display: grid;
+       grid-template-columns: repeat(1, 1fr);
+      align-items: center;
+      justify-content: center;
+        gap: 4px
+    }
+    .subHead{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        margin: 0px 30px;
+      
+       
+    }
+     .input{
+        background-color: transparent;
+            padding: 10px;
+            width: 150px;
+            outline: none;
+            border: 1px solid grey;
+            height: 30px;
+            color: $font-primary;
+            margin-left: 5px;
+    
+    
+        }
+}
+@media screen and (min-width: 725px) and (max-width: 1368px){
+    .movie-container{
+        border: 1px solid white;
+        display: grid;
+       grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: center;
+        gap: 4px
+    }
+}
